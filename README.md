@@ -14,6 +14,8 @@
 
 - Responsive design
 
+- Full screen and autoplay
+
 ## Demo & Examples
 Live demo: [https://littlewin-wang.github.io/vue-images/example/](https://littlewin-wang.github.io/vue-images/example/)
 
