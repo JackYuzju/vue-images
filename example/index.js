@@ -47,6 +47,8 @@ new Vue({
       modalclose: true,
       keyinput: true,
       mousescroll: true,
+      showplaybutton: true,
+      showfullbutton: true,
       showclosebutton: true,
       showcaption: true,
       imagecountseparator: 'of',

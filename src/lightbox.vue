@@ -2,7 +2,7 @@
   <div class="vue-images">
     <gallery :images="images" @changeIndex="changeImg($event)"></gallery>
     <div ref="lightbox" class="lightbox" v-show="isShow" @click="isShow=!modalclose">
-      <fancybox ref="fancybox" :images="images" :index="index" :reset="!isShow" @play="playImg" @pause="pauseImg" @close="closeImg" @addIndex="nextImg" @decIndex="prevImg" :showclosebutton="showclosebutton" :showcaption="showcaption" :imagecountseparator="imagecountseparator" :showimagecount="showimagecount"></fancybox>
+      <fancybox ref="fancybox" :images="images" :index="index" :reset="!isShow" @play="playImg" @pause="pauseImg" @close="closeImg" @addIndex="nextImg" @decIndex="prevImg" :showplaybutton="showplaybutton" :showfullbutton="showfullbutton" :showclosebutton="showclosebutton" :showcaption="showcaption" :imagecountseparator="imagecountseparator" :showimagecount="showimagecount"></fancybox>
       <paginator :images="images" :activeIndex="index" @changeIndex="changeImg($event)" v-show="showthumbnails"></paginator>
     </div>
   </div>
@@ -20,6 +20,8 @@
       modalclose: Boolean,
       keyinput: Boolean,
       mousescroll: Boolean,
+      showplaybutton: Boolean,
+      showfullbutton: Boolean,
       showclosebutton: Boolean,
       showcaption: Boolean,
       imagecountseparator: String,

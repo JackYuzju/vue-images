@@ -62,6 +62,8 @@
                             :modalclose="modalclose"
                             :keyinput="keyinput"
                             :mousescroll="mousescroll"
+                            :showplaybutton="showplaybutton"
+                            :showfullbutton="showfullbutton"
                             :showclosebutton="showclosebutton"
                             :showcaption="showcaption"
                             :imagecountseparator="imagecountseparator"
@@ -139,6 +141,18 @@ new Vue({
                   <td align="left">bool</td>
                   <td align="left">true</td>
                   <td align="left">Supports mouse scroll</td>
+                </tr>
+                <tr>
+                  <td align="left">showplaybutton</td>
+                  <td align="left">bool</td>
+                  <td align="left">true</td>
+                  <td align="left">Optionally display a autoplay button in top left corner</td>
+                </tr>
+                <tr>
+                  <td align="left">showfullbutton</td>
+                  <td align="left">bool</td>
+                  <td align="left">true</td>
+                  <td align="left">Optionally display a full screen button near <b>autoplay button</b></td>
                 </tr>
                 <tr>
                   <td align="left">showclosebutton</td>

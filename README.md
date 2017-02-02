@@ -61,6 +61,8 @@ images | array	| undefined	| Required. An array of objects containing valid src 
 modalclose	| bool	| true	| Allow users to exit the lightbox by clicking the backdrop
 keyinput	| bool	| true	| Supports keyboard input - esc, ←, and →
 mousescroll	| bool	| true	| Supports mouse scroll
+showplaybutton	| bool	| true	| Optionally display a autoplay button in top left corner
+showfullbutton	| bool	| true	| Optionally display a full screen button near autoplay button
 showclosebutton	| bool	| true	| Optionally display a close X button in top right corner
 showcaption	| bool	| true	| Optionally display a caption under the image
 imagecountseparator	| string	| ' of '	| Custom separator for the image count

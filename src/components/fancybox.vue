@@ -2,11 +2,11 @@
   <div class="fancybox">
     <div class="image-wrapper">
       <div class="header">
-        <div class="play" @click.stop="play">
+        <div class="play" @click.stop="play" v-show="showplaybutton">
           <icon v-if="!isPlay" :type="'play'" :color="'#ccc'"></icon>
           <icon v-else :type="'pause'" :color="'#ccc'"></icon>
         </div>
-        <div class="full" @click.stop="full">
+        <div class="full" @click.stop="full" v-show="showfullbutton">
           <icon v-if="!isFullScreen" :type="'full'" :color="'#ccc'"></icon>
           <icon v-else :type="'exitfull'" :color="'#ccc'"></icon>
         </div>
@@ -41,6 +41,8 @@
         type: Boolean,
         default: false
       },
+      showplaybutton: Boolean,
+      showfullbutton: Boolean,
       showclosebutton: Boolean,
       showcaption: Boolean,
       imagecountseparator: String,
